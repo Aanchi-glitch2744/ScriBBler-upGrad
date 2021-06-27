@@ -6,7 +6,7 @@
 		Home Page 
 	</title>
 	<link rel="stylesheet" type="text/css" href="css/index.css">
-
+	<link rel="stylesheet" type="text/css" href="css/header.css">
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -29,4 +29,99 @@
  <!--     <h6 class="navbar-text">Explore Imagine Create</h6> -->
       <p class="middleText">Explore. Imagine. Create.</p>
     </div>
+<!-- Trigger/Open The Modal One Start Sign Up-->
+<div class="nav navbar-nav navbar-right">
+      
+<button  id="myBtnOne" class="topButtons" type="button" value="Sign Up">Sign Up</button>
+<!-- The Modal -->
+<div id="myModalOne" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-one" onkeyup="checkinput();">
+    <div id="inputerror"></div>
+    
+   <h1> <p><span class="closeOne" id="closeOnex">&times;</span>Get Started</p></h1>
+
+    <hr size="10" width="90%">  
+     <form  name="LoginForm" id="myForm">
+      <label for="username">Full Name</label>
+      <input type="text"  placeholder="Enter Full Name" id="username" required><br>
+      <label for="username">Username</label>
+      <input type="text"  placeholder="Enter Username" id="username" required><br>
+      <label name="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" onkeyup="checkpass();" required><br>
+      <label for="password">Confirm Password</label>
+      <input name="confirmPass" type="password"  id="confirmPass"  onkeyup="checkpass();" placeholder="Confirm Password" required><br>
+      <span id='message'></span>
+      </form>
+      <button type="submit" class="login-btn" onclick="clearcontent()">Sign Up</button><br>
+    
+  </div>
+  </div>
+</div> <!-- end of button 1 modal -->
+
+
+<!-- Trigger/Open The Modal Two Start Sign In -->
+<div class="nav navbar-nav navbar-right">
+      
+<button  id="myBtnTwo" class="topButtons" type="button" value="Sign In">Sign In</button>
+<div id="myModalTwo" class="modal">
+  <!-- The Modal -->
+  <!-- Modal content -->
+ <div class="modal-content-two">
+    
+     <h1 ><span class="closeTwo" id="closeTwox" data-dismiss="myModalTwo">&times;</span>Welcome Back!</h1>
+     <hr size="10" width="90%">  
+     <form  name="LoginForm" id="myForm">
+      <label for="username">Username</label>
+      <input type="text"  placeholder="Enter Username" id="username" required><br>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required><br>
+      </form>
+      <button type="submit" class="login-btn" onclick="clearcontent()">Sign In</button><br>
+      <p style="text-align: center;">Not a member? <a id="myBtnOne signup" class="topButtons" type="button" value="Sign Up" style="background-color: white; color: blue;"><strong>Sign Up</strong></a></p>
+
+
+  </div>
+	</div>
+</div> <!-- end of button 2 modal -->
+
+  </div>
+</nav>
+</div> <!-- Header div closed -->
+
+
+
+<!-- Home page All Post Button Section -->
+<div class="postcontainer">
+  <div class="postcenter">
+    <button id="postBtnOne" class="postButtons" type="button" value="All Posts" ><a href="html/bloglist.html">All Posts</a></button>
+<!-- Create Post Button-->
+    <button id="postBtnTwo" class="postButtons" type="button" value="Create Post">Create Post</button>
+<!-- The Modal For Create Post--> 
+  <div id="myModalpost" class="modal">-->
+  <!-- Modal content -->
+ <div class="modal-content-post">
+    
+     <h1 ><span class="closepost" id="closePost" data-dismiss="myModalTwo">&times;</span>Pen Your Post</h1>
+     <form  name="PostForm" id="myPostForm">
+      <label for="titlepost">Title:</label>
+      <input type="text" name="titlepost" id="titlebar"><br>
+
+    <label class="form-group" for="contentTextarea">Content:</label>
+    <textarea class="form-control" id="contentTextarea" rows="12"></textarea><br>
+      </form>
+      <button type="submit" class="create-btn" onclick="clearcontentpost()">Create</button><br>
+ 
+  </div>
+  </div>
+  </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/header.js"></script>
+
 </body>
