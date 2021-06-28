@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>
+		Post Page 
+	</title>
+
+
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+  <link href="../css/post.css" rel="stylesheet" type="text/css" >
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/font-awesome.min.css">
+  <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+  <script src="https://kit.fontawesome.com/197f87237f.js" crossorigin="anonymous"></script>
+  <!-- adding styling to header -->
+ 
+ 
+<!--adding Awsome Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+   
+
+   <!-- TODO: Include Font Awesome file here -->
+   <!--
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"> </script>
+-->
+
+
+    <!-- TODO: Include Google Fonts file here -->
+
+</head>
+
+<script type="text/javascript" src="../js/bloglist.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+
+</body>
+
+
+  <div class="header">
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <!-- giving multiple class navbar-brand deleted  from ScriBBler -->
+      <a class="logo-title" id="pageTitle" href = '../index.html'>ScriBBler</a>
+ <!--     <h6 class="navbar-text">Explore Imagine Create</h6> -->
+      <p class="middleText">Explore. Imagine. Create.</p>
+    </div>
+<!-- Trigger/Open The Modal One Start Sign Up-->
+<div class="nav navbar-nav navbar-right">
+      
+<button  id="myBtnOne" class="topButtons" type="button" value="Sign Up">Sign Up</button>
+<!-- The Modal -->
+<div id="myModalOne" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content-one" onkeyup="checkinput();">
+    <div id="inputerror"></div>
+    
+   <h1> <p><span class="closeOne" id="closeOnex">&times;</span>Get Started</p></h1>
+
+    <hr size="10" width="90%">  
+     <form  name="LoginForm" id="myForm">
+      <label for="username">Full Name</label>
+      <input type="text"  placeholder="Enter Full Name" id="username" required><br>
+      <label for="username">Username</label>
+      <input type="text"  placeholder="Enter Username" id="username" required><br>
+      <label name="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" onkeyup="checkpass();" required><br>
+      <label for="password">Confirm Password</label>
+      <input name="confirmPass" type="password"  id="confirmPass"  onkeyup="checkpass();" placeholder="Confirm Password" required><br>
+      <span id='message'></span>
+      </form>
+      <button type="submit" class="login-btn" onclick="clearcontent()">Sign Up</button><br>
+    
+  </div>
+  </div>
+</div> <!-- end of button 1 modal -->
+
+
+<!-- Trigger/Open The Modal Two Start Sign In -->
+<div class="nav navbar-nav navbar-right">
+      
+<button  id="myBtnTwo" class="topButtons" type="button" value="Sign In">Sign In</button><div id="myModalTwo" class="modal"><!-- The Modal -->
+  <!-- Modal content -->
+ <div class="modal-content-two">
+    
+     <h1 ><span class="closeTwo" id="closeTwox" data-dismiss="myModalTwo">&times;</span>Welcome Back!</h1>
+     <hr size="10" width="90%">  
+     <form  name="LoginForm" id="myForm">
+      <label for="username">Username</label>
+      <input type="text"  placeholder="Enter Username" id="username" required><br>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter Password" required><br>
+      </form>
+      <button type="submit" class="login-btn" onclick="clearcontent()">Sign In</button><br>
+      <p style="text-align: center;">Not a member? <a id="myBtnOne signup" class="topButtons" type="button" value="Sign Up" style="background-color: white; color: blue;" onclick="openSignUpModal()"><strong>Sign Up</strong></a></p>
+
+
+  </div>
+	</div>
+</div> <!-- end of button 2 modal -->
+
+  </div>
+</nav>
+</div> <!-- Header div closed -->
+ <div class="blogContent">
+        <div id="blogTitle" class="blogTite">
+        <h id="blogTitleNew">The legacy of Jimi Hendrix</h>
+        <center><textarea id="titleArea" style="display: none; width: 247px;font-size: 16.5px"></textarea></center>
+    </div>
+
+<div class="blogAuthor">
+
+    <!-- Insert code for Edit/Save button and  -->
+    <p>Jimi</p>
+    <a href=# id="edit" onclick="changeText()"><div id="text"> Edit</div><div id="text2"><i class="fas fa-edit"></i></div></a>
+</div>
+
+<div class="blogText">
+    <p id="blogBody">
+            Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
+    </p>
+    <textarea id="textarea" style="display: none"></textarea>
+</div>
+
+    <!--code for Like button, Comment button, Comment box here-->
+    <a href=# onclick="liker()" id="edit" style="width: 90px"><div id="text"><i class="fas fa-thumbs-up"></i></div><div id="text2" class="likeText">Like</div></a>
+	<p id="like">Be the first one to like this!</p>
+    <div id="commentBox" style="display: none">
+		<textarea id="cmntText" placeholder="Leave a comment..." style="height: 85px; width: 40%"></textarea><br>
+		<button onclick="cmnt()">Comment</button>
+		<B><p>All Comments</p></B>
+		<div id="commentArea" style="width: 45%; background-color: darkgray; height: auto; padding: 10px ;display: none">
+		</div>	
+	</div>
+		<p id="temp" style="display: none;"><i class="far fa-save"></i></p>
+		<p id="temp2" style="display: none;"><i class="fas fa-edit"></i></p>
+
+
+
+
+
+<script type="text/javascript" src="../js/post.js"></script>
+<script type="text/javascript" src="../js/header.js"></script>
+
+</body>
